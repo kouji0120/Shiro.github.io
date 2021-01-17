@@ -1,0 +1,373 @@
+@charset "UTF-8";
+
+/*ベース-----------------*/
+body{
+    margin: 0;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #2b2b2b;
+
+}
+p{
+    
+}
+h3{
+    font-size: 36px;
+}
+h4{
+    font-size: 24px;
+}
+/*レイアウトーーーーーーーーーーーー*/
+#l-header{
+  background-image: url(../images/header.png);
+  width: 1280px;
+  height: 620px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+     position: relative;
+     margin: 0 auto;
+}
+
+
+/*モジュールーーーーーーーーーーーーー*/
+.bl_header-nav{
+    position: absolute;
+    display: flex;
+    width: 960px;
+    height:64px;
+    justify-content: space-between;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+}
+h2{
+    font-size: 36px;
+    color: #ffffff;
+    font-family: "Myriad Pro";
+    letter-spacing: 0px;
+    font-weight:50 ;
+  }
+.hamburger-menu{
+  width: 100px;
+  position: relative;
+}
+
+
+/*ハンバーガーメニュー*/
+.hamburger-menu__line,
+.hamburger-menu__line::before,
+.hamburger-menu__line::after{
+  position: absolute;
+  display: block;
+  right: 0;
+  width: 32px;
+  height: 1px;
+  background: #fff;
+  content: "";
+  
+}
+.hamburger-menu{
+    position: relative;
+    width: 32px;
+    height: 64px;
+    cursor: pointer;
+}
+
+.active .hamburger-menu__line::after {
+    top: 50%;
+    opacity: 0;
+}
+.hamburger-menu__line, .hamburger-menu__line--dummy{
+    top: 50%;
+    transition: all .3s;
+}
+.hamburger-menu__line, .hamburger-menu__line::before, .hamburger-menu__line::after, .hamburger-menu__line--dummy {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 32px;
+    height: 1px;
+    background: #fff;
+}
+
+.hamburger-menu__line {
+    top: 50%;
+}
+  
+.hamburger-menu__line::before {
+    top: calc(50% - 8px);
+}
+  
+.hamburger-menu__line::after {
+    top: calc(50% + 8px);
+}
+
+
+/*Shiro*/
+.l-main{
+    display: inline-block;
+    margin-top:240px;
+}
+.l-main h1{
+    font-size: 120px;
+    color: #ffffff;
+    font-weight: 168;
+}
+.l-main p{
+    color: #ffffff;
+   
+}
+.l-main p::before,
+.l-main p::after{
+    content: "";
+    color: #ffffff;
+    display:inline-block;
+    width: 12px;
+    height: 1px;
+    background: #fff;
+  
+}
+
+
+/*concept*/
+.l-concept{
+    text-align: center;
+    margin-top: 60px;
+   
+}
+.l-concept p{
+    margin-top: 57px;
+}
+.l-concept img{
+    width: 960px;
+    height: 400px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+}
+.gray{
+    background-color: #EDEDED;
+    width: 1280px;
+    height: 240px;
+    margin: 0 auto;
+    position: absolute;
+    top: 1160px;
+    margin: 0 auto;
+    left: -50%;
+    right: -50%;
+    z-index: 0;
+}
+
+
+/*work*/
+.l-work{
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 182px;
+}
+.l-work_title,
+.l-work_text{
+    text-align: center;
+}
+.l-work_text{
+    margin-top: 57px;
+}
+.l-work-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    height: 1609px;
+    
+}
+.l-work_yourself{
+    margin-top: 80px;
+}
+.l-work-container h4{
+    margin-top: 16px;
+}
+.l-work_right-img{
+    margin-top: 120px;
+}
+
+
+/*Florist*/
+.l-Florist_title,.l-Florist_text{
+    text-align: center;
+}
+.l-Florist_text{
+    margin-top: 57px;
+}
+.l-Florist{
+    max-width: 960px;
+    height: 651px;
+    margin: 0 auto;
+    border-top: none;
+    padding-top: 80px;
+    position: relative;
+   
+}
+.l-Florist-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.l-Florist-container h4{
+    margin-top: 12px;
+}
+.l-Florist-container p{
+    margin-top: 8px;
+}
+
+.gray-Florist{
+    background-color: #EDEDED;
+    width: 1280px;
+    height: 374px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    left: -50%;
+    right: -50%;
+   z-index: -1;
+}
+
+
+/*Shop-information*/
+.l-Shop-information{
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 80px;
+    height: 686px;
+    border-top: none;
+}
+.l-Shop-information_text,
+.l-Shop-information h3{
+    text-align: center;
+}
+.l-Shop-information_text{
+    margin-top: 57px;
+}
+.l-Shop-information-container{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.l-Shop-information_nav{
+    width: 432px;
+    height: 320px;
+    
+    border-right: none;
+}
+.l-Shop-information_nav th{
+    font-weight: normal;
+    font-size: 16px;
+}
+table{
+    margin:12px 40px;
+}
+.table-title{
+    width: 80px;
+    height: 62px;
+    border-right: 1px solid #A0A0A0;
+}
+.table-title_two{
+    width: 80px;
+    height: 30px;
+    border-right: 1px solid #A0A0A0;
+}
+.table-container{
+    margin-top: 10px;
+    display: block;
+}
+.table-content{
+    padding-left: 15px;
+    
+}
+/*Contact-us*/
+.l-Contact-us{
+    background-image: url(../images/contact_us.png);
+    height: 450px;
+    width: 1280px;
+    margin: 0 auto;
+}
+.big-bg{
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.l-Contact-us-container{
+    text-align: center;
+}
+.l-Contact-us-container h3{
+    padding-top: 80px;
+}
+.l-Contact-us_text{
+    margin-top: 57px;
+}
+
+/*メールアイコン*/
+.btn-content{
+    position: relative;
+}
+.btn a{
+    display: inline-block;
+    width: 360px;
+    height: 80px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    border: 1px solid #A0A0A0;
+    margin-top: 40px;
+    color: #2B2B2B;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 26px;
+    padding-left: 24px;
+}
+.btn a::before{
+    top: 30px;
+    left: 85px;
+    width: 30px;
+    height: 20px;
+    border: 1px solid #2b2b2b;
+}
+.btn a::before,
+.btn a::after{
+    content: '';
+    position: absolute;
+    border-radius: 2px;
+}
+.btn a::after{
+    top: 21px;
+    left: 90px;
+    width: 20px;
+    height: 20px;
+    border-right: 1px solid #2b2b2b;
+    border-bottom: 1px solid #2b2b2b;
+    transform: rotate(45deg);
+}
+/*メールアイコンここまで*/
+
+
+/*フッター*/
+footer{
+    text-align: center;
+    margin: 12px 0;
+}
+.l-title{
+    position: relative;
+    padding-bottom: 30px;
+}
+.l-title::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 40px;
+    height: 1px;
+    background: #2b2b2b;
+    transform: translateX(-50%);
+}
